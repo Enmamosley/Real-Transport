@@ -140,7 +140,7 @@
   @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text;
   @apply prose-pre:rounded-lg prose-pre:bg-text-light;
   @apply prose-code:px-1 prose-code:text-primary;
-  @apply prose-strong:text-text;
+  @apply prose-strong:text-secondary;
   @apply prose-a:text-text prose-a:underline prose-a:hover:text-primary;
   @apply prose-li:text-text;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""];

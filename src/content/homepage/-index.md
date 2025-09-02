@@ -71,7 +71,7 @@ feature:
       image: "/images/service/assurance.png"
 
 about:
-  title: "Socios Confiables en **Transporte de Carga Especializado**"
+  title: "Socios Confiables en Transporte de Carga Especializado"
   content: "Real Transport es una empresa líder en servicios de transporte local y foráneo en Monterrey."
   content_2: "Con años de experiencia y una flota moderna, ofrecemos soluciones de transporte seguras y eficientes para empresas de todos los tamaños."
   image: "/images/pattern-2.png"

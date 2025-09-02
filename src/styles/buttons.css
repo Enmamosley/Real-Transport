@@ -21,3 +21,7 @@
 .btn-outline-secondary {
   @apply text-white hover:opacity-80 border-white bg-transparent;
 }
+
+.btn-secondary-custom {
+  @apply bg-secondary hover:opacity-80 border-secondary text-white;
+}

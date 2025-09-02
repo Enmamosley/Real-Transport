@@ -43,7 +43,7 @@ const call_to_action = (await getEntry(
             <p class="pb-6" set:html={markdownify(description)} />
             {
               button.enable && (
-                <a href={button.link} class="btn btn-primary">
+                <a href={button.link} class="btn btn-secondary-custom">
                   {button.label}
                 </a>
               )

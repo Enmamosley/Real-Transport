@@ -61,7 +61,7 @@ const posts = await getSinglePage("blog");
               data-aos="fade-up-sm"
               data-aos-delay="150"
             >
-              <a class="btn btn-primary" href={banner.button.link}>
+              <a class="btn btn-secondary-custom" href={banner.button.link}>
                 {banner.button.label}
               </a>
             </div>
@@ -199,7 +199,7 @@ const posts = await getSinglePage("blog");
           />
         </div>
       </div>
-      <div class="pt-24 border-t lg:pt-28 border-border/20">
+      <div class="pt-24 border-t lg:pt-28 border-secondary/30">
         <div
           class="items-center justify-center row md:justify-between gy-5 gx-4 xl:gx-5"
         >
@@ -235,14 +235,14 @@ const posts = await getSinglePage("blog");
           </div>
           <div class="col-12 md:col-6 order-1 md:order-2">
             <div
-              class="p-8 border bg-tertiary/20 border-border/20 rounded-xl md:px-24 md:py-14"
+              class="overflow-hidden rounded-xl"
               data-aos="fade-up-sm"
             >
               <ImageMod
-                class="mx-auto"
+                class="w-full h-full object-cover"
                 src={about.image}
                 width={0}
-                height={435}
+                height={0}
                 alt={about.title}
                 format="webp"
               />
