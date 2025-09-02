@@ -5,7 +5,7 @@ description: ""
 content: "Creates a sense of excitement and prestige around career opportunities at Citadel Security, positioning the company as a leader in its field and an attractive"
 button:
   enable: true
-  link: "/contact"
+  link: "/contacto"
   label: "See Job Openings"
 
 about:

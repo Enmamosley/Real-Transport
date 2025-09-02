@@ -6,5 +6,5 @@ description: "En el mundo empresarial actual, la logística es fundamental. Prob
 button:
   enable: true
   label: "Solicitar Cotización"
-  link: "contact"
+  link: "/contacto"
 ---
