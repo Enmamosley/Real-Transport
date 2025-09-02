@@ -1,0 +1,144 @@
+---
+import ImageMod from "@/components/ImageMod.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import CallToAction from "@/partials/CallToAction.astro";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
+const {
+  title,
+  description,
+  meta_title,
+  button,
+  image,
+  story,
+  value,
+} = about.data;
+
+const call_to_action = (await getEntry(
+  "callToAction",
+  "call-to-action"
+)) as CollectionEntry<"callToAction">;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <section class="section bg-light">
+    <div class="container">
+      <div class="items-center justify-between row g-4 gy-5 xl:gy-0">
+        <div class="lg:col-5">
+          <h1
+            class="pb-4"
+            data-aos="fade-up-sm"
+            set:html={markdownify(title)}
+          />
+          <div data-aos="fade-up-sm" data-aos-delay="100">
+            <p class="pb-6" set:html={markdownify(description)} />
+            {
+              button.enable && (
+                <a href={button.link} class="btn btn-primary">
+                  {button.label}
+                </a>
+              )
+            }
+          </div>
+        </div>
+        <div class="lg:col-6" data-aos="fade-left-sm" data-aos-delay="200">
+          <ImageMod src={image} alt="About Image" width={0} height={0} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-0 section">
+    <div class="container">
+      <div class="row g-4">
+        {
+          story.stats.map((s, i: number) => (
+            <div
+              class="sm:col-6 lg:col-4"
+              data-aos="fade-right-sm"
+              data-aos-delay={50 + i * 100}
+            >
+              <div class="h-full p-8 border border-border rounded-lg">
+                <h2
+                  class="pb-3 text-4xl text-center"
+                  set:html={markdownify(s.value)}
+                />
+                <p
+                  class="text-center text-text-light"
+                  set:html={markdownify(s.key)}
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row items-start justify-between">
+        <div class="w-[100%] lg:w-[40%] max-lg:mb-11" data-aos="fade-up-sm">
+          <h2 set:html={markdownify(story.title)} />
+        </div>
+        <div class="w-[100%] lg:w-[55%]">
+          <p
+            class="pb-8"
+            data-aos="fade-up-sm"
+            set:html={markdownify(story.content_1)}
+          />
+          <p data-aos="fade-up-sm" set:html={markdownify(story.content_2)} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="justify-between row g-4 gy-5">
+        <div class="lg:col-4">
+          <h3
+            class="pb-5 text-4xl text-white"
+            data-aos="fade-up-sm"
+            set:html={markdownify(value.title)}
+          />
+          <p
+            class="text-light/50"
+            data-aos="fade-up-sm"
+            set:html={markdownify(value.content)}
+          />
+        </div>
+        <div class="text-white lg:col-6">
+          <div class="flex flex-col gap-7">
+            {
+              value.values.map((v, i: number) => (
+                <div
+                  class="flex flex-col gap-5 pb-5 border-b-2 border-border/20"
+                  data-aos="fade-up-sm"
+                  data-aos-delay={50 + i * 100}
+                >
+                  <h3
+                    class="text-2xl text-white"
+                    set:html={markdownify(v.title)}
+                  />
+                  <p class="text-light/80" set:html={markdownify(v.content)} />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CallToAction call_to_action={call_to_action} />
+</Base>

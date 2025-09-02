@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Real Transport - Servicios de Transporte en Monterrey",
+    "base_url": "https://real-transport.com.mx",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_width": "345",
+    "logo_height": "63",
+    "logo_text": "Real Transport"
+  },
+
+  "settings": {
+    "default_theme": "system",
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "blog"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "© 2025 Real Transport - Todos los derechos reservados | Monterrey, Nuevo León"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Solicitar Cotización",
+    "link": "/contact"
+  },
+
+  "metadata": {
+    "meta_author": "Real Transport",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Real Transport - Servicios de transporte confiables en Monterrey y toda la República Mexicana"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "main": [
+    {
+      "name": "Inicio",
+      "url": "/"
+    },
+    {
+      "name": "Servicios",
+      "url": "/servicios"
+    },
+    {
+      "name": "Nosotros",
+      "url": "/nosotros"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Contacto",
+      "url": "/contacto"
+    }
+  ],
+  "footer": [
+    {
+      "title": "Enlaces",
+      "items": [
+        {
+          "name": "Inicio",
+          "url": "/"
+        },
+        {
+          "name": "Nosotros",
+          "url": "/nosotros"
+        },
+        {
+          "name": "Servicios",
+          "url": "/servicios"
+        },
+        {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        {
+          "name": "Contacto",
+          "url": "/contacto"
+        }
+      ]
+    },
+    {
+      "title": "Empresa",
+      "items": [
+        {
+          "name": "Nosotros",
+          "url": "/nosotros"
+        },
+        {
+          "name": "Preguntas Frecuentes",
+          "url": "/faq"
+        },
+        {
+          "name": "Política de Privacidad",
+          "url": "/aviso-de-privacidad"
+        },
+        {
+          "name": "Términos de Servicio",
+          "url": "/terminos-de-servicio"
+        }
+      ]
+    }
+  ]
+}
