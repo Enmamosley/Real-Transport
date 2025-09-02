@@ -12,14 +12,14 @@ testimonials:
     content: "La experiencia de Real Transport en logística ha sido invaluable para nuestra organización. Sus servicios de transporte local y seguimiento GPS nos ayudaron a optimizar nuestras entregas significativamente."
 
   - name: "Carlos Rodríguez"
-    designation: "Director de Operaciones, ManufacturaCorp"
+    designation: "Director de Operaciones"
     avatar: "/images/client/client-img-2.png"
     content: "Los servicios integrales de Real Transport nos ayudaron a identificar y resolver problemas críticos en nuestra cadena de suministro, asegurándonos estar protegidos antes de que se convirtieran en costos mayores."
 
   - name: "Miguel González"
-    designation: "Gerente de Compras, ConstructoraMX"
+    designation: "Gerente de Compras"
     avatar: "/images/client/client-img-3.png"
-    content: "The expertise and guidance from Citadel Security's consultants were invaluable in revamping our software security posture. Their tailored approach helped us implement best practices and strengthen our defenses."
+    content: "Son expertos en proporcionar servicios integrales de logistica, sus servicios de transporte local son seguros y eficientes, nos ayudan con nuestras cargas urgentes, día a día, son los mejores."
 
   - name: "David Lee"
     designation: "CTO, InnovaTech Solutions"
