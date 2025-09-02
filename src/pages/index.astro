@@ -61,7 +61,7 @@ const posts = await getSinglePage("blog");
               data-aos="fade-up-sm"
               data-aos-delay="150"
             >
-              <a class="btn btn-secondary-custom" href={banner.button.link}>
+              <a class="btn btn-secondary-custom" style="background-color: #00A672; border-color: #00A672;" href={banner.button.link}>
                 {banner.button.label}
               </a>
             </div>
@@ -118,7 +118,7 @@ const posts = await getSinglePage("blog");
               {s.button.enable && (
                 <a
                   href={s.button.link}
-                  class="flex items-center gap-1 transition duration-300 text-secondary hover:opacity-80"
+                  class="flex items-center gap-1 transition duration-300 text-black hover:opacity-80"
                 >
                   Leer Más <span class="sr-only">Detalles</span>
                   <svg
@@ -286,7 +286,7 @@ const posts = await getSinglePage("blog");
           }
         </div>
         <div class="inline-block text-center">
-          <a class="btn btn-outline-primary" href="/blog">
+          <a class="btn btn-outline-primary text-black" style="color: black;" href="/blog">
             Leer Más Blogs
           </a>
         </div>
